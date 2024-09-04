@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <style>
+        html, body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #ffffff;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: #0D6698;
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .logo p {
+            margin: 0;
+            font-size: 15px;
+            color: #000;
+            font-style: italic;
+        }
+
+        .navbar {
+            margin-top: 40px;
+            margin-left: 350px;  
+        }
+
+        nav a {
+            display: inline-block; 
+            text-align: center;
+            width: 80px; 
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            margin-left: 20px;
+            padding: 8px 12px; 
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: #fff;
+            background-color: #000;
+        }
+        .get {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .get h1 {
+            margin-top: 10px;
+            color: #004b7a;
+        }
+        .get p {
+            margin-top: 10px;
+        }
+        header, .get, .contact, footer {
+            margin: 0;
+            padding: 0;
+        }
+        .contact {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .left-side h2, .right-side h2 {
+            color: #000;
+        }
+
+        .left-side p, .right-side p {
+            color: #000;
+        }
+        .left-side i {
+            color:#004b7a ;
+        }
+
+        .left-side h2 {
+            margin-top: 50px;
+            margin-left: 100px;
+            font-size: 29px;
+        }
+
+        .left-side p {
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        .right-side {
+            margin-right: 100px;
+        }
+
+        .right-side h2 {
+            margin-bottom: 20px;
+            margin-right: 310px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            margin-bottom: 6px;
+        }
+
+        .input-group input, .input-group textarea {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #33a2e7;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            width: 25%;
+            border: none;
+            border-radius: 5px;
+            background-color: #004b7a;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+            margin-left: 140px;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #c1bdbd;
+            font-size: 12px;
+        }
+
+        footer {
+            margin-bottom: auto;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 30px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TryAlt</h1>
+            <p>Virtual Dressing Room</p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact Us</a> 
+        </nav>
+        <div class="auth-buttons">
+            <a href="sign_up.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <div class="get">
+        <h1>Get In Touch</h1>
+        <p>Our Team is Happy to help you.</p>
+    </div>
+
+    <div class="contact">
+        <div class="left-side">
+            <h2>Meet Us</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Kigali, Rwanda</p>
+            <p><i class="fa-solid fa-phone"></i> +250 781 157 960</p>
+            <p><i class="fa-solid fa-envelope"></i> leaishimwe55@gmail.com</p>
+        </div>
+        <div class="right-side">
+            <h2>Contact Us</h2>
+            <form action="">
+                <div class="input-group">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email_address">Email Address</label>
+                    <input type="email" name="email_address" id="email_address" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Comments</label>
+                    <textarea name="message" id="message" placeholder="Leave a comment here" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copy Right 2024 © By Lee All Rights Reserved</p>
+    </footer>
+</body>
+</html>

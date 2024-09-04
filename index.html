@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryAlt - Virtual Dressing Room</title>
+    <script src="java.js" defer></script>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    color: #0D6698;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    font-style: italic;
+}
+
+.navbar {
+    margin-top: 20px;
+    flex: 2;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+    background-color: #000;
+}
+
+.auth-buttons {
+    flex: 1;
+    text-align: right;
+}
+
+.signup-btn {
+    background-color: #0D6698;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #064e7a;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.demo-image {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.description {
+    max-width: 400px;
+    text-align: left;
+}
+
+.description h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.description ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.description ul li {
+    margin-bottom: 10px;
+}
+
+.shop-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TryAlt</h1>
+            <p>Virtual Dressing Room</p>
+        </div>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    
+        <div class="auth-buttons">
+            <a href="sign_up.html" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Virtual Dressing Room</h2>
+            <div class="content">
+                <img src="image/t2.gif" alt="Virtual Dressing Room Demo" class="demo-image">
+                <div class="description">
+                    <h3>Virtual Dressing Room</h3>
+                    <p>is a cutting-edge platform designed to provide fashion enthusiasts and online shoppers with an interactive and personalized experience.</p>
+                    <p>With our platform, you can:</p>
+                    <ul>
+                        <li>Try on different outfits virtually and mix and match styles.</li>
+                        <li>Save your favorite looks and share them with friends.</li>
+                    </ul>
+                    <a href="shop.html" class="shop-btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copy Right 2024 © By Lee All Rights Reserved</p>
+    </footer>
+</body>
+</html>

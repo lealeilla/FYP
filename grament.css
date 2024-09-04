@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px; /* Reduced max-width */
+    margin: 0 auto;
+    padding: 10px; /* Reduced padding */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px; /* Reduced padding */
+}
+
+.logo h1 {
+    color: #0D6698;
+    font-size: 28px; /* Reduced font size */
+    margin: 0;
+}
+
+.logo p {
+    margin: 3px 0 0; /* Reduced margin */
+    color: #555;
+    font-style: italic;
+    font-size: 14px; /* Reduced font size */
+}
+
+.back-to-home {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px; /* Reduced font size */
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 20px; /* Reduced font size */
+    color: #333;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Reduced gap */
+}
+
+.upload-section, .garment-section, .output-section {
+    width: 32%; /* Slightly increased width to compensate for reduced gap */
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+    border-radius: 5px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.upload-box i {
+    font-size: 40px; /* Reduced icon size */
+    color: #0D6698;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.upload-box p {
+    margin: 3px 0; /* Reduced margin */
+    color: #333;
+    font-size: 14px; /* Reduced font size */
+}
+
+.upload-box button {
+    background-color: #066D17;
+    color: #fff;
+    border: none;
+    padding: 8px; /* Reduced padding */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+}
+
+.upload-box button:hover {
+    background-color: #094a6a;
+}
+
+.garment-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.output-section h3, .garment-section h3 {
+    text-align: left;
+    margin-bottom: 10px; /* Reduced margin */
+    font-size: 16px; /* Reduced font size */
+    color: #555;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%; /* Ensure the footer spans the full width */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align it to the bottom of the page */
+    left: 0;
+}
+
